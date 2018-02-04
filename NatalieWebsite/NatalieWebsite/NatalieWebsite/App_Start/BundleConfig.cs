@@ -23,9 +23,20 @@ namespace NatalieWebsite
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/themeJs").Include(
+                      "~/Scripts/jquery.min.js",
+                      "~/Scripts/jquery.scrolly.min.js",
+                      "~/Scripts/jquery.scrollex.min.js",
+                      "~/Scripts/skel.min.js",
+                      "~/Scripts/util.js",
+                      "~/Scripts/main.js"));
+
+            bundles.Add(new StyleBundle("~/Content/themeCss").Include(
+                      "~/Content/main.css"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css"));
         }
     }
 }
